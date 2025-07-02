@@ -20,7 +20,7 @@ print("Size of  2D Array is :" +  str(my_2d_array.size))
 array_sum = my_2d_array.sum()  # Sum of all elements
 print("Sum of all elements in 2D array: " + str(array_sum))
 
-my_dot_product = my_2d_array.dot(np.zeros((2,3)))  # Dot product with a zero matrix
+my_dot_product = my_2d_array.dot(np.zeros((3,2)))  # Dot product with a zero matrix
 print("Dot product of 2D array with a zero matrix: ")
 print(my_dot_product)
 
@@ -44,3 +44,22 @@ print(zeros_array)
 # create a identity matrix
 identity_matrix = np.eye(3)
 print("Identity matrix:")
+
+
+new_array = np.linspace(0, 100, 5)  # Create an array of 5 evenly spaced numbers between 0 and 1
+print("Array of evenly spaced numbers:")
+print(new_array)
+
+random_array = np.random.rand(3, 3)  # Create a 3x3 array of random numbers
+print("3x3 array of random numbers:")
+print(random_array)
+
+random_normal_array = np.random.randn(3, 3)  # Create a 3x3 array of random numbers from a normal distribution
+print("3x3 array of random numbers from a normal distribution:")
+print(random_normal_array)
+
+print(random_normal_array.dtype)
+print("Max of random_normal_array: ", random_normal_array.max())
+print("Min of random_normal_array: ", random_normal_array.min())
+print("Max Arg index  of random_normal_array: ", random_normal_array.argmax())
+print("Max Arg Inded of random_normal_array: ", random_normal_array.argmin())
