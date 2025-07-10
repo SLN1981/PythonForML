@@ -36,3 +36,5 @@ flat_list_prices_df = pd.DataFrame(np.random.randint(20, 100, size=(9, 2)),
 print(flat_list_prices_df)
 
 print(flat_list_prices_df.loc['G1']['Price'])  # Accessing all rows for 'G1'
+
+
